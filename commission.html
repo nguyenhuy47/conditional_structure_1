@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> hoa hong ban hang</title>
+</head>
+<body>
+<script>
+    let sales = Number(prompt("nhap vao doanh so:",1000000));
+    let commission = 0;
+    if(sales < 5000000){
+        document.write("chưa dat muc huong hoa hong" + commission);
+    }else if(sales < 10000000){
+        commission = sales*0.1;
+        document.write("tien hoa hong" + commission);
+    }else {
+        commission = sales*0.2;
+        document.write("tien hoa hong: " + commission);
+    }
+
+</script>
+</body>
+</html>

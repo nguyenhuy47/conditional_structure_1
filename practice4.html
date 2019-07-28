@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>max 3 numbers</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("nhap vao so a:"));
+    let b = parseInt(prompt("nhap vao so b:"));
+    let c = parseInt(prompt("nhap vao so c:"));
+    let max = a;
+
+    if(max < b && b < c ){
+    max = c;
+    }else if(max < b && b > c){
+        max = b;
+    }else if(max > b && b < c && max > c){
+        max = a;
+    }else {
+        max = a;
+    }
+    document.write("max:" + max);
+</script>
+</body>
+</html>

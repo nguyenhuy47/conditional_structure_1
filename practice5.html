@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xep loai hoc luc hs</title>
+</head>
+<body>
+<script>
+    let testScore = parseFloat(prompt("nhap diem kiem tra:"));
+    let midScore = parseFloat(prompt("nhap diem giua ky:"));
+    let finishScore = parseFloat(prompt("nhap diem cuoi ky:"));
+    let averangeScore = (testScore + midScore + finishScore)/3;
+    if(averangeScore <= 5.0){
+        document.write("hoc sinh trung binh" + averangeScore);
+    }else if( averangeScore <= 7.0){
+        document.write("hoc sinh trung binh kha" + averangeScore);
+    }else if(averangeScore <= 8.0){
+        document.write("hoc sinh tien tien" + averangeScore);
+    }else {
+        document.write("hoc sinh goi" + averangeScore);
+    }
+</script>
+</body>
+</html>
